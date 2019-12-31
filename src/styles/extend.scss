@@ -1,0 +1,166 @@
+@import "./vars.scss";
+.clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: "";
+  }
+  .clearfix:after {
+    clear: both
+  }
+  
+/* .nf-tag + .nf-tag {
+  margin-left: 10px;
+  margin-top: 5px;
+} */
+.nf-tag{
+  cursor: default;
+  margin:3px 5px;
+  .edit {
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    vertical-align: middle;
+    top: -1px;
+    right: -5px;
+  }
+}
+.nf-tag-input-medium {
+  .el-input__inner{
+    height: 28px;
+    line-height: 26px;
+  }
+}
+.nf-tag-input-small {
+  .el-input__inner{
+    height: 24px;
+    line-height: 22px;
+  }
+}
+.nf-tag-input-mini {
+  .el-input__inner{
+    height: 20px;
+    line-height: 19px;
+  }
+}
+.input-new-tag {
+  width: 90px;
+  margin-left: 10px;
+  vertical-align: bottom;
+  .el-input__inner{
+    height: 32px;
+    line-height: 30px;
+  }
+}
+.el-card__footer {
+    padding: 5px 20px;
+    border-top: 1px solid #EBEEF5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.nf-card__headercompact{
+    .el-card__header{
+        padding: 0 20px !important;
+        line-height: 45px;
+    }
+    .vertical{
+        margin: 0 auto; /*水平居中*/
+        position: relative;
+        vertical-align:middle
+    }
+}
+.nf-dialog {
+  border-radius: 2px;
+  .el-dialog__header {
+    padding: 5px 10px;
+    line-height: 25px;
+    background-color: $color-primary;
+    border-radius: 2px 2px 0 0;
+  }
+  .el-dialog__title {
+    color: #fff;
+  }
+  .el-dialog__headerbtn {
+    top: 10px;
+    right: 10px;
+  }
+  .el-dialog__close {
+    color: #fff;
+  }
+  .el-dialog__body {
+    padding: 10px;
+    min-height: 200px;
+  }
+  .el-dialog__footer {
+    padding: 5px 20px;
+    background-color: #d7d7d7;
+    border-radius: 0 0 2px 2px;
+  }
+  .el-dialog__close{
+    color: #fff !important;
+  }
+  .template{
+    display: block !important;
+  }
+}
+
+.nf-table{
+  .el-table__expanded-cell{
+    padding: 0;
+  }
+  .is-center{
+    .cell{
+      padding-left:0 !important;
+      padding-right: 0;
+    }
+  }
+  .compact{
+    padding: 0 !important;
+  }
+  /* tr.expanded+tr{
+    display: none;
+  } */
+  .warning {
+    background: oldlace;
+  }
+  .success {
+    background: #f0f9eb;
+  }
+}
+.nf-table-incard{
+  border:0;
+  thead{
+    tr:first-child{
+      th:last-child{
+        border-right: 0;
+      }
+    }
+  }
+  tbody{
+    td:last-child{
+      border-right: 0;
+    }
+    tr:last-child{
+      td{
+        border-bottom:0 ;
+      }
+    }
+  }
+}
+.nf-table-incard::before{
+  height: 0;
+}
+.nf-table-incard::after{
+  width: 0;
+}
+
+.nf-tabs-compact{
+  .el-tabs__content{
+    padding: 0 !important;
+  }
+}
